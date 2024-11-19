@@ -1,0 +1,29 @@
+.mainContainer {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  .logoImage {
+    width: 45px;
+    margin-left: 4%;
+    .image {
+      border-radius: 100%;
+    }
+  }
+  .linksMainContainer {
+    margin-right: 5%;
+    .linksSubContainer {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 3rem;
+      .linksConatiner {
+        font-weight: 600;
+        font-family: unset;
+        cursor: pointer;
+        font-size: 18px;
+      }
+    }
+  }
+}
