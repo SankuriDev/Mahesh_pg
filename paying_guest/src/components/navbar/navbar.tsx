@@ -2,6 +2,8 @@
 import images from "@/images/images-export/images-export";
 import styles from "./navbar.module.scss";
 import Image from "next/image";
+import { Bokor } from "next/font/google";
+const bokor = Bokor({ subsets: ["latin"], weight: "400" });
 
 const { pglogo } = images;
 
@@ -40,11 +42,19 @@ export const Navbar = () => {
           height={200}
         />
       </div>
+      <div
+        style={{
+          fontFamily: `${bokor.style.fontFamily}, system-ui`,
+        }}
+        className={styles.nameofPg}
+      >
+        Mahesh's PG
+      </div>
       <div className={styles.linksMainContainer}>
         <div className={styles.linksSubContainer}>
           {links?.map((item) => {
             return (
-              <div className={styles.linksConatiner} key={item?.id}>
+              <div className={styles.linksContainer} key={item?.id}>
                 {item?.linkName}
               </div>
             );
