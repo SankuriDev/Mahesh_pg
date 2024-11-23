@@ -1,28 +1,44 @@
 .mainContainer {
-  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: white;
+  box-shadow: 0 4px 2px -2px gray;
+  width: 100%;
+  height: 80px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 10px;
   .logoImage {
-    width: 45px;
-    margin-left: 4%;
+    width: 60px;
     .image {
       border-radius: 100%;
     }
   }
+  .nameofPg {
+    color: teal;
+    font-size: 3rem;
+    font-family: "Bokor", system-ui;
+    margin-left: 15%;
+  }
   .linksMainContainer {
-    margin-right: 5%;
     .linksSubContainer {
       display: flex;
       justify-content: space-around;
       align-items: center;
       gap: 3rem;
-      .linksConatiner {
-        font-weight: 600;
-        font-family: unset;
+      .linksContainer {
+        font-weight: 900;
+        font-family: cursive;
         cursor: pointer;
-        font-size: 18px;
+        font-size: 20px;
+        color: deeppink;
+        margin-bottom: 12px;
+        transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+        &:hover {
+          border-bottom: 3px solid deeppink;
+        }
       }
     }
   }
