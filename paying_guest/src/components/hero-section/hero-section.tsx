@@ -79,7 +79,6 @@ export const HeroSection = () => {
         width: "100%",
         transition: "background-image 1s ease-in-out",
         position: "relative",
-        borderRadius: "40px",
       }}
     >
       <div

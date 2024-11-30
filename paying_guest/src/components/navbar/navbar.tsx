@@ -24,10 +24,6 @@ let links = [
     id: 4,
     linkName: "About Us",
   },
-  {
-    id: 5,
-    linkName: "Gallary",
-  },
 ];
 
 export const Navbar = () => {
