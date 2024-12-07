@@ -1,0 +1,83 @@
+.mainRoomSectionDiv {
+  margin-top: 4rem;
+  text-align: center;
+  label {
+    color: teal;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .roomGridSection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    width: 95%;
+    margin: auto;
+    margin-top: 2rem;
+    gap: 3rem;
+    .innerRoomSection {
+      display: flex;
+      flex-direction: column;
+      .imageSection {
+        border-radius: 2rem;
+        transition: transform 0.3s ease;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+      .roomDiscription {
+        font-weight: 600;
+        font-family: cursive;
+        margin-top: 1rem;
+      }
+    }
+  }
+  @media (max-width: 1024px) {
+    .roomGridSection {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+
+    label {
+      font-size: 1.8rem;
+    }
+
+    .innerRoomSection {
+      .imageSectionDiv {
+        margin: auto;
+      }
+      .roomDiscription {
+        font-weight: 600;
+        font-family: cursive;
+        width: 80%;
+        margin: auto;
+        margin-top: 1rem;
+      }
+    }
+  }
+
+  /* Mobile View */
+  @media (max-width: 768px) {
+    .roomGridSection {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    label {
+      font-size: 1.5rem;
+    }
+
+    .innerRoomSection {
+      .imageSectionDiv {
+        margin: auto;
+      }
+      .roomDiscription {
+        font-weight: 600;
+        font-family: cursive;
+        width: 80%;
+        margin: auto;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
