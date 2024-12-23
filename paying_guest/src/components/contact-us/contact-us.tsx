@@ -9,13 +9,13 @@ export default function ContactUs() {
   return (
     <>
       <div id="Contact Us" className={styles.mainContactUSSectionDiv}>
-        <label
+        <h1
           style={{
             fontFamily: `${bokor.style.fontFamily}, system-ui`,
           }}
         >
-          Contact US
-        </label>
+          Contact Us
+        </h1>
       </div>
       <div className={styles.contactDetails}>
         <div className={styles.contactItem}>
