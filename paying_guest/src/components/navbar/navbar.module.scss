@@ -7,39 +7,105 @@
   width: 100%;
   height: 80px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   padding: 10px;
+
   .logoImage {
     width: 60px;
     .image {
       border-radius: 100%;
     }
   }
+
   .nameofPg {
     color: teal;
-    font-size: 3rem;
+    font-size: 2rem;
     font-family: "Bokor", system-ui;
-    margin-left: 15%;
+    margin-left: 1rem;
   }
+
+  .hamburgerMenu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    .bar {
+      width: 100%;
+      height: 4px;
+      background-color: black;
+      transition: all 0.3s ease-in-out;
+    }
+  }
+
   .linksMainContainer {
+    display: flex;
+    justify-content: flex-end;
+
     .linksSubContainer {
       display: flex;
       justify-content: space-around;
       align-items: center;
       gap: 3rem;
+
       .linksContainer {
         font-weight: 900;
         font-family: cursive;
         cursor: pointer;
-        font-size: 20px;
+        font-size: 1rem;
         color: deeppink;
         margin-bottom: 12px;
         transition: color 0.3s ease-in-out, border-bottom 0.3s ease-in-out;
+
         &:hover {
           border-bottom: 3px solid deeppink;
         }
       }
+    }
+  }
+
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    .nameofPg {
+      font-size: 1.5rem;
+    }
+
+    .linksMainContainer {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: white;
+      position: absolute;
+      top: 80px;
+      left: 0;
+      box-shadow: 0 4px 2px -2px gray;
+
+      .linksSubContainer {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+      }
+    }
+
+    .showMenu {
+      display: flex;
+    }
+
+    .hamburgerMenu {
+      display: flex;
+    }
+
+    .menuActive .bar:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+    .menuActive .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .menuActive .bar:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
     }
   }
 }

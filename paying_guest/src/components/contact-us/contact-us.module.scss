@@ -1,0 +1,45 @@
+.mainContactUSSectionDiv {
+  margin-top: 4rem;
+  text-align: center;
+  label {
+    color: teal;
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+.contactDetails {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  padding: 40px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  max-width: 300px;
+  text-align: left;
+
+  svg {
+    color: #007bff;
+  }
+
+  h3 {
+    margin: 0 0 5px;
+    font-size: 18px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 16px;
+    color: #555;
+  }
+}
