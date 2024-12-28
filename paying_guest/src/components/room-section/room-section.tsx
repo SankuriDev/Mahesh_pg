@@ -9,7 +9,7 @@ const { room1, room2, room3, room4 } = images;
 
 const RoomSection = () => {
   return (
-    <div className={styles.mainRoomSectionDiv}>
+    <div id="Rooms" className={styles.mainRoomSectionDiv}>
       <label
         style={{
           fontFamily: `${bokor.style.fontFamily}, system-ui`,

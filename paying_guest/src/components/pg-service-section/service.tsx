@@ -9,7 +9,7 @@ const { service1, service2, service3, service4 } = Images;
 
 const Service = () => {
   return (
-    <div className={styles.mainserviceSection}>
+    <div id="Services" className={styles.mainserviceSection}>
       <label
         style={{
           fontFamily: `${bokor.style.fontFamily}, system-ui`,
